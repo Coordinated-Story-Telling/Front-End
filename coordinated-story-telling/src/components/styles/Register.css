@@ -1,0 +1,23 @@
+.register-view, .signin-view {
+    margin-top:150px;
+    text-align: center;
+
+}
+
+.register-view form, .signin-view  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    min-width: 300px;
+    width: 30%;
+    margin: auto;
+    border: 2px solid;
+    padding: 60px;
+    border-radius: 5%;
+}
+
+.register-view form input, button, p , .signin-view form input, button, p  {
+    padding: 10px;
+    margin: 10px;
+}
