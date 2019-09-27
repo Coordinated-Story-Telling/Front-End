@@ -47,7 +47,7 @@ class Register extends Component {
                     required
                     value={this.state.firstName}
                     onChange={this.editRegisterForm}
-                    name='first_name'
+                    name='firstName'
                 />
                 <input 
                     type='text'
@@ -55,7 +55,7 @@ class Register extends Component {
                     required
                     value={this.state.lastName}
                     onChange={this.editRegisterForm}
-                    name='last_name'
+                    name='lastName'
                 />
 
                 <input 
