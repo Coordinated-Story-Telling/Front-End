@@ -9,7 +9,7 @@ export const register = newUser => dispatch => {
         type: REGISTER_START
     });
     return Axios
-    .post('https://coordinated-stories.herokuapp.com/api/auth/register', newUser)
+    .post('https://ourstory-api.herokuapp.com/api/auth/register', newUser)
     .then(res => {
         console.dir(res)
         dispatch({

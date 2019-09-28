@@ -10,7 +10,7 @@ export const login = user => dispatch => {
         type: LOGIN_START
     });
     
-    return Axios.post('https://coordinated-stories.herokuapp.com/api/auth/login', user)
+    return Axios.post('https://ourstory-api.herokuapp.com/api/auth/login', user)
     .then(res => {
         // console.dir(res)
         localStorage.setItem('token', res.data.token);
