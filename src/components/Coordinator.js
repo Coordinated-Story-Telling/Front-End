@@ -31,6 +31,5 @@ const mapStatetoProps = state => {
   
 export default connect(mapStatetoProps, { getUserStories })(PrivateHome)
   
-  
 // export default PrivateHome
 

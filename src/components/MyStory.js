@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { getUserStories, postUserStories, deleteUserStories, putUserStories } from '../actions/userStories'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Redirect } from 'react-router-dom'
 import './styles/MyStory.css'
 
 class MyStory extends React.Component {
@@ -176,3 +176,5 @@ const mapStatetoProps = state => {
 } 
   
 export default connect(mapStatetoProps, { getUserStories, postUserStories, deleteUserStories, putUserStories })(MyStory)
+  
+

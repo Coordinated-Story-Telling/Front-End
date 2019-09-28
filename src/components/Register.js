@@ -1,17 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './styles/Register.css'
 import { register } from '../actions/register'
 import { connect } from 'react-redux'
 
-class Register extends Component {
+class Register extends React.Component {
     constructor() {
         super()
         this.state = {
             username: "",
             email: "",
             password: "",
-            firstName: "",
-            lastName: "",
+            first_name: "",
+            last_name: "",
         }
     }
 
@@ -28,8 +28,8 @@ class Register extends Component {
                 username: "",
                 email: "",
                 password: "",
-                firstName: "",
-                lastName: "",
+                first_name: "",
+                last_name: "",
             })
         })
     }
@@ -45,17 +45,17 @@ class Register extends Component {
                     type='text'
                     placeholder='First Name' 
                     required
-                    value={this.state.firstName}
+                    value={this.state.first_name}
                     onChange={this.editRegisterForm}
-                    name='firstName'
+                    name='first_name'
                 />
                 <input 
                     type='text'
                     placeholder='Last Name' 
                     required
-                    value={this.state.lastName}
+                    value={this.state.last_name}
                     onChange={this.editRegisterForm}
-                    name='lastName'
+                    name='last_name'
                 />
 
                 <input 
